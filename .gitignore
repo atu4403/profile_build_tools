@@ -43,3 +43,5 @@ pip-wheel-metadata
 .tmp
 memo.md
 htmlcov/*
+test
+images
