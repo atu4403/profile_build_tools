@@ -12,8 +12,8 @@ PYPI_LIST = ["env-paths", "timeit2", "remind-task"]
 QIITA_USER = "atu4403"
 GITHUB_USER = "atu4403"
 ATCODER_USER = "atu4403"
-TEMPLATE = Path("test/README.tpl.md").read_text()
-OUTPATH = Path("test/README.md")
+TEMPLATE = Path("README.tpl.md").read_text()
+OUTPATH = Path("README.sumple.md")
 # pypi
 pypi_list = ""
 for st in get_pypi_stats(PYPI_LIST):
