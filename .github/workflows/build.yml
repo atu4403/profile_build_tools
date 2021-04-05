@@ -1,0 +1,22 @@
+on:
+  push:
+jobs:
+  build-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Xotabu4/selenoid-github-action@v1
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: generate
+        run: |
+          python -m pip install --upgrade pip
+          pip install selenium
+          python test/build.py
+      - uses: EndBug/add-and-commit@v7
+        with:
+          author_name: github-actions
+          author_email: github-actions@github.com
+          message: 'update AtCoder images'
+          pull_strategy: '--rebase'
