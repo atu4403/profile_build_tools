@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "profile_build_tools"
-version = "0.1.0"
+version = "0.1.1"
 description = "APIからREADMEを自動作成するtools"
 authors = ["atu4403 <73111778+atu4403@users.noreply.github.com>"]
 
