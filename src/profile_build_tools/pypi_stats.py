@@ -23,7 +23,7 @@ def _to_dict(json_dict) -> dict:
         "package_url": json_dict["info"]["package_url"],
         "version": version,
         "update_utc": update_utc.format(),
-        "update_jst": update_utc.to("asia/tokyo").format(),
+        "update_jst": update_utc.to("Asia/Tokyo").format(),
     }
     return j
 

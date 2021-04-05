@@ -30,9 +30,9 @@ def _to_list(json_list: list) -> list:
             "watchers_count": json_dict["watchers_count"],
             "forks_count": json_dict["forks_count"],
             "created_at_utc": created_at.format(),
-            "created_at_jst": created_at.to("asia/tokyo").format(),
+            "created_at_jst": created_at.to("Asia/Tokyo").format(),
             "update_at_utc": pushed_at.format(),
-            "update_at_jst": pushed_at.to("asia/tokyo").format(),
+            "update_at_jst": pushed_at.to("Asia/Tokyo").format(),
         }
         li.append(j)
     return li
