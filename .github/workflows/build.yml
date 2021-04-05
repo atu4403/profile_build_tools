@@ -19,4 +19,4 @@ jobs:
           author_name: github-actions
           author_email: github-actions@github.com
           message: 'update AtCoder images'
-          pull_strategy: '--rebase'
+          pull_strategy: 'NO-PULL'
